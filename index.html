@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5" />
+  <title>Bethel Hospital · Private Care</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- Font Awesome 6 (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <h1><i class="fas fa-heartbeat" style="color:var(--sky-deep);margin-right:6px;"></i>Bethel<span>Hospital</span></h1>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#departments">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn-outline"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO with slideshow -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-shield-alt"></i>  Safe · Private · Advanced</div>
+        <h1><i class="fas fa-user-md"></i> Your Health,<br>Our Priority</h1>
+        <p>World-class diagnostics, compassionate care, and zero waiting. Bethel Hospital brings premium healthcare closer to you.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary"><i class="fas fa-arrow-right"></i> Get in Touch</a>
+          <a href="#departments" class="btn-outline"><i class="fas fa-stethoscope"></i> Explore Care</a>
+        </div>
+        <div class="hero-stats">
+          <div><i class="fas fa-clock"></i> <span>Guaranteed <strong>48h</strong> consult</span></div>
+          <div><i class="fas fa-user-md"></i> <span>50+ specialists</span></div>
+        </div>
+      </div>
+      <div class="hero-slideshow" id="heroSlideshow">
+        <img src="images/image-1.jpg" alt="Hospital interior" class="slide active" />
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=600&h=400&fit=crop&crop=center" alt="Surgery room" class="slide" />
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop&crop=center" alt="Patient care" class="slide" />
+        <div class="slide-dots">
+          <span class="active" data-index="0"></span>
+          <span data-index="1"></span>
+          <span data-index="2"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section class="departments" id="departments">
+    <div class="container text-center">
+      <h2 class="section-title"><i class="fas fa-cubes"></i> Our Departments</h2>
+      <p class="section-sub" style="margin:0 auto 10px;">Specialized care across every stage of life, delivered with precision and empathy.</p>
+      <div class="dept-grid">
+        <div class="dept-card"><i class="fas fa-heartbeat"></i><h4>Cardiology</h4><p>Heart health & intervention</p></div>
+        <div class="dept-card"><i class="fas fa-brain"></i><h4>Neurology</h4><p>Brain & nervous system</p></div>
+        <div class="dept-card"><i class="fas fa-bone"></i><h4>Orthopedics</h4><p>Bone & joint care</p></div>
+        <div class="dept-card"><i class="fas fa-baby"></i><h4>Maternity</h4><p>Pregnancy & delivery</p></div>
+        <div class="dept-card"><i class="fas fa-lungs"></i><h4>Pulmonology</h4><p>Respiratory health</p></div>
+        <div class="dept-card"><i class="fas fa-eye"></i><h4>Ophthalmology</h4><p>Vision & eye surgery</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS with images -->
+  <section class="doctors" id="doctors">
+    <div class="container text-center">
+      <h2 class="section-title"><i class="fas fa-user-md"></i> Meet Our Specialists</h2>
+      <p class="section-sub" style="margin:0 auto 20px;">Highly experienced consultants, available for you.</p>
+      <div class="doc-grid">
+        <!-- Doctor 1 -->
+        <div class="doc-card">
+          <div class="doc-avatar"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sarah Chen" /></div>
+          <h4>Dr. Sarah</h4>
+          <div class="doc-specialty"><i class="fas fa-heart"></i> Cardiologist</div>
+          <div class="doc-detail"><i class="fas fa-briefcase"></i> 14 years experience</div>
+          <div class="doc-detail"><i class="fas fa-calendar-alt"></i> Next avail: <strong>Jul 3, 10:30 AM</strong></div>
+          <span class="doc-available"><i class="fas fa-check-circle"></i> Accepting new</span>
+        </div>
+        <!-- Doctor 2 -->
+        <div class="doc-card">
+          <div class="doc-avatar"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. James Okafor" /></div>
+          <h4>Dr. Yohannes</h4>
+          <div class="doc-specialty"><i class="fas fa-brain"></i> Neurologist</div>
+          <div class="doc-detail"><i class="fas fa-briefcase"></i> 11 years experience</div>
+          <div class="doc-detail"><i class="fas fa-calendar-alt"></i> Next avail: <strong>Jul 2, 2:15 PM</strong></div>
+          <span class="doc-available"><i class="fas fa-check-circle"></i> Accepting new</span>
+        </div>
+        <!-- Doctor 3 -->
+        <div class="doc-card">
+          <div class="doc-avatar"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Amara Singh" /></div>
+          <h4>Dr. Emmahos</h4>
+          <div class="doc-specialty"><i class="fas fa-bone"></i> Orthopedic Surgeon</div>
+          <div class="doc-detail"><i class="fas fa-briefcase"></i> 18 years experience</div>
+          <div class="doc-detail"><i class="fas fa-calendar-alt"></i> Next avail: <strong>Jul 4, 9:00 AM</strong></div>
+          <span class="doc-available"><i class="fas fa-check-circle"></i> Accepting new</span>
+        </div>
+        <!-- Doctor 4 -->
+        <div class="doc-card">
+          <div class="doc-avatar"><img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Dr. Emily Rossi" /></div>
+          <h4>Dr. Kaku</h4>
+          <div class="doc-specialty"><i class="fas fa-baby"></i> Obstetrician</div>
+          <div class="doc-detail"><i class="fas fa-briefcase"></i> 9 years experience</div>
+          <div class="doc-detail"><i class="fas fa-calendar-alt"></i> Next avail: <strong>Jul 1, 11:45 AM</strong></div>
+          <span class="doc-available"><i class="fas fa-check-circle"></i> Accepting new</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container text-center">
+      <h2 class="section-title"><i class="fas fa-quote-left"></i> Patient Stories</h2>
+      <p class="section-sub" style="margin:0 auto 20px;">Real experiences from real people who trusted Bethel.</p>
+      <div class="testi-grid">
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"The attention and follow-up were outstanding. I felt like I was their only patient."</p><h5>— Kebede W.</h5><span>Cardiology</span></div>
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"Dr. Singh changed my life. I can walk without pain after 5 years. Forever grateful."</p><h5>— Misgana T.</h5><span>Orthopedics</span></div>
+        <div class="testi-card"><i class="fas fa-quote-right"></i><p>"The maternity team made us feel so safe. Our baby girl arrived peacefully."</p><h5>— Hailu</h5><span>Maternity</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-phone-alt"></i> Get in Touch</h2>
+      <p class="text-center section-sub" style="margin:0 auto 24px;">Regular check-ups save lives. Reach out today — we're here 24/7.</p>
+      <div class="contact-flex">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> <strong>Email:</strong> care@bethelhospital.health</p>
+          <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +251 911 22 3344</p>
+          <p><i class="fas fa-clock"></i> <strong>24/7 Helpline</strong> — always available</p>
+          <div style="margin-top:28px;"><i class="fas fa-heartbeat big-icon"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER with map -->
+  <footer>
+    <div class="container" style="padding:0 24px;">
+      <div class="footer-map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.471600334266!2d38.69200501217543!3d9.002855204072636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8701acd435e7%3A0x4e173e7e21632ae5!2sBethel%20Hospital!5e0!3m2!1sen!2set!4v1782913155984!5m2!1sen!2set" 
+        width="400" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-flex">
+        <div>
+          <p style="font-weight:600;font-size:1.1rem;color:white;"><i class="fas fa-heartbeat" style="color:var(--sky-primary);"></i> Bethel Hospital</p>
+          <p style="opacity:0.6; font-size:0.9rem;">© 2026 All rights reserved. Private healthcare with heart.</p>
+        </div>
+        <div class="footer-map-label">
+          <i class="fas fa-map-pin"></i>
+          <span>2M3V+M4W, Addis Ababa</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
